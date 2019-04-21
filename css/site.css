@@ -1,0 +1,58 @@
+:root {
+--bg-color: #bebfc1;
+--page-spacing: 20px;
+--border: 4px dashed #56b9c7;
+}
+
+h2{
+      color: #2e3436;
+      border: 2px dotted gold;
+      width: 400px
+            }
+            
+div:before {
+    margin: 10px;
+    padding: 8px;
+    }
+
+
+.GridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    /*grid-template-rows: 130px;*/
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: end;
+    /*grid-gap: 120px;*/
+    grid-gap: 5%;
+    height: 300px;
+    background: #bebfc1;
+    border: 4px double #56b9c7;
+
+    }
+
+.BarChart {
+   width: 90px;
+/*   height: 150px;*/
+   grid-row-start: 1;
+   grid-row-end: 5;
+   color: white;
+   background-image: linear-gradient(indigo, blue, red);
+   /* add possible animation*/
+   margin-left: 24px;
+   box-shadow: 0 0 20px #50def2;
+   }
+
+
+.MainContent {
+background-color: var(--bg-color);
+margin-left: var(--page-spacing);
+}
+.NavBar {
+padding: var(--page-spacing);
+}
+
+
+    
+    
+
+  
